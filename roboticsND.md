@@ -80,4 +80,7 @@ roslaunch simple_arm robot_spawn.launch
 ~/catkin_ws   =>  source devel/setup.bash
 ~/catkin_ws   =>  roslaunch simple_arm robot_spawn.launch
 missing
+
+testing 
+
 sudo apt-get install ros-lunar-ros-control ros-lunar-ros-controllers
