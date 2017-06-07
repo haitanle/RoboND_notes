@@ -118,3 +118,25 @@ rosdep will check for missing dependencies.
     rosdep check [package]
 then install
     rosdep install -i [package]
+
+catkin_create_pkg 
+(inside src) catkin_create_pkg <package_name> [dependencies1 dependencies 2]
+produces CMakeLists.txt and package.xml - describe dependencies
+
+other packages: 
+    -scripts(Python executables)
+    -src(C++ source files)
+    -config ->configuration files
+    -launch-> code for starting nodes
+#################################################################
+write Ros Nodes
+_________________________________________________________________
+write Ros node (simple_node) to send join movements (topics) to simple_arm
+topic Name: /simple_arm/joint_1_position_controller/command
+message type: std_msgs/Float64
+
+create scripts folder with scripts
+cd ~/catkin_ws/src/simple_arm/, mkdir scripts, cd scripts
+echo '#!/bin/bash' >> hello, echo 'echo Hello World' >> hello
+chmod u+x hello, cd ~/catkin_ws, catkin_make, source devel/setup.bash,
+rosrun simple_arm hello
