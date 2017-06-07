@@ -1,7 +1,7 @@
-*test*
+*test*  
 new line 
 
-new line
+new line  
 # should skip
 
 
