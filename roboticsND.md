@@ -1,5 +1,6 @@
 *test*
 new line 
+
 new line
 # should skip
 
